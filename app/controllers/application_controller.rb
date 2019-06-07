@@ -10,7 +10,8 @@ class App < Sinatra::Base
 
     post "/teams" do
       @team_hash = params
-
+binding.pry
       erb :team
+      binding.pry
     end
 end
