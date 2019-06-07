@@ -9,6 +9,8 @@ class App < Sinatra::Base
     end
 
     post "/teams" do
+      @team_hash = params
+
       erb :team
     end
 end
